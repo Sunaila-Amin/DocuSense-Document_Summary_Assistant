@@ -16,11 +16,9 @@ except Exception:
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("doc-summary-backend")
 
-# --- Tesseract ---
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-
-# --- Poppler ---
-POPPLER_PATH = r"C:\poppler\bin"
+# Just let system PATH handle it
+pytesseract.pytesseract.tesseract_cmd = "tesseract"
+POPPLER_PATH = None  # Linux usually has poppler installed globally
 
 # --- Summarizer ---
 summarizer = None

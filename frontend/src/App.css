@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4a00e0;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.dropzone {
+  border: 2px dashed #4a90e2;
+  padding: 30px;
+  border-radius: 12px;
+  background: #f7f9fc;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.dropzone:hover {
+  background: #e9f0fb;
+  border-color: #0056b3;
+}
+
+.filename {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.hint {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.dropdown {
+  margin-left: 10px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn.extract {
+  background: #4a90e2;
+  color: white;
+}
+
+.btn.extract:hover {
+  background: #357ab7;
+  transform: scale(1.05);
+}
+
+.btn.summarize {
+  background: #28a745;
+  color: white;
+}
+
+.btn.summarize:hover {
+  background: #1e7e34;
+  transform: scale(1.05);
+}
+
+.btn.clear {
+  background: #dc3545;
+  color: white;
+}
+
+.btn.clear:hover {
+  background: #a71d2a;
+  transform: scale(1.05);
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 0.95rem;
+  color: #444;
+}

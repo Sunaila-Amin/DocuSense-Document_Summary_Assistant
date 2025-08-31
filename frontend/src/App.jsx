@@ -69,9 +69,12 @@ export default function App() {
       fd.append("file", file);
       if (path === "summarize") fd.append("length", length);
 
-      const res = await axios.post(`http://127.0.0.1:5000/${path}`, fd, {
+      const API_BASE = import.meta.env.VITE_API_URL;
+
+      const res = await axios.post(`${API_BASE}/${path}`, fd, {
         headers: { "Content-Type": "multipart/form-data" },
       });
+
 
       const data = res.data;
 
